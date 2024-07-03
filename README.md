@@ -1,23 +1,19 @@
 <<<<<<< HEAD
 # dbt-pipeline
 =======
-<<<<<<< HEAD
-# dbt-pipeline
-=======
-Welcome to your new dbt project!
+## Project Structure
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
->>>>>>> 2b49f73 (dbt pipeline)
->>>>>>> 749577a (dbt pipeline)
+models/
+├── marts/
+│ ├── fct_orders.sql
+│ ├── order_items.sql
+│ ├── order_items_summary.sql
+├── staging/
+│ ├── sources.yaml
+│ ├── stg_lineitems.sql
+│ └── stg_orders.sql
+macros/
+└── pricing.sql
+tests/
+├── fct_orders_date_valid.sql
+└── fct_orders_discount.sql
