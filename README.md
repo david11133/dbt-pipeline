@@ -24,4 +24,4 @@ This dbt project defines a data transformation pipeline for a sample dataset, li
 
 ### Configurations
 - **sources.yaml**: YAML file containing Snowflake connection details.
-- **generic_test.yml (Optional)**: Potential test configuration file (content unclear).
+- **generic_test.yml (Optional)**: Potential test configuration file for the 'order_key' and 'order_status' accepted values.
